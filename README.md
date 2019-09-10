@@ -26,7 +26,11 @@
       cd  rtl8812au_8821au_linux 
       make clean
       make install -j8
-      sudo modprobe cfg80211 
+      sudo modprobe cfg80211     (for t4u ac1300 v3)
+      
+      sudo make 
+      sudo make install      
+      sudo modprobe rtl8821ae     (for dwa172 and dwa172, the lines 27-29 modified)
                     
                   
    In such situations the drivers for adapters TP-Link T4U ac1300 v3 USB3 can be done successfully. 
